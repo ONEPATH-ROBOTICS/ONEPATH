@@ -5,12 +5,10 @@
 **Your path to intelligent robotics.**
 
 <p align="center">
-<a href="https://arxiv.org/abs/2412.18588">Technical Paper</a> |
 <a href="https://one-path.io/">Website</a> |
 <a href="https://one-path.io/">Documentation</a> |
 <a href="https://github.com/ONEPATH-ROBOTICS/ONEPATH">GitHub</a> |
-<a href="https://x.com/onepathrobotics">X</a> |
-<a href="https://discord.gg/onepath">Discord</a>
+<a href="https://x.com/onepathrobotics">X</a>
 </p>
 
 ## Project Overview
