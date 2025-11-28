@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  onepath:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: onepathai/onepath:latest
+    container_name: onepath
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - ROS_DOMAIN_ID=0
+      - CYCLONEDDS_HOME=/app/cyclonedds/install
+      - CYCLONEDDS_URI=file:///cyclonedds/cyclonedds.xml
+      - CMAKE_PREFIX_PATH=/app/cyclonedds/install
+      - ONEPATH_API_KEY=${ONEPATH_API_KEY}
+      - VIRTUAL_ENV=/app/ONEPATH/.venv
+      - PATH=/app/ONEPATH/.venv/bin:$PATH
+      - XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR}
+      - PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native
+      - PULSE_COOKIE=/root/.config/pulse/cookie
+      - ALSA_CARD=0
+    volumes:
+      - ./config:/app/ONEPATH/config
+      - ./cyclonedx:/cyclonedx
+      - /dev/snd:/dev/snd:rw
+      - ${XDG_RUNTIME_DIR}/pulse:${XDG_RUNTIME_DIR}/pulse:rw
+      - ~/.config/pulse/cookie:/root/.config/pulse/cookie:ro
+      - ${HOME}/shared_data/locations:/app/ONEPATH/locations:rw
+    devices:
+      - /dev/snd:/dev/snd
+      - /dev/video0:/dev/video0
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    cap_add:
+      - SYS_PTRACE
+      - NET_ADMIN
+    security_opt:
+      - apparmor:unconfined
+    group_add:
+      - audio
+    command: ["unitree_go2_modes"]

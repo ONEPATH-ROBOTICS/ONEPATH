@@ -1,0 +1,17 @@
+---
+title: Manage Account and Keys
+description: "Managing your ONEPATH Account and API Keys"
+---
+
+Your ONEPATH account and API keys are used for authentication and authorization in your applications. You can manage your account and keys via the [ONEPATH portal](https://one-path.io/) or directly via an API. The API provides access to the full set of operations (generate, delete, account balance, and key listing):
+
+```bash
+https://one-path.io/api/core
+
+post $core/api_keys/create
+post $core/api_keys/delete
+get $core/account/balance  # get your account balance
+get $core/api_keys         # list API keys
+```
+
+Note: A JWT token is generated with [Clerk](https://clerk.com/) and is used to authenticate your requests. Ensure you have the necessary permissions to access this endpoint.

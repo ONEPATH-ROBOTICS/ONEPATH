@@ -1,0 +1,37 @@
+---
+title: ONEPATH-avatar Beta Release
+description: "v1.0.0-beta.3"
+---
+
+Beta release for the Docker image onepathai/onepath-avatar, which provides face display module for ONEPATH
+
+## Features.
+
+### [v1.0.0-beta.3](https://github.com/ONEPATH-ROBOTICS/ONEPATH-avatar/releases/tag/v1.0.0-beta.3)
+- Real-time Speech Recognition Display
+    Added live transcript visualization from the Automatic Speech Recognition (ASR) module, enabling operators to view speech-to-text conversion in real-time on the interface
+- Teleoperation Video Streaming
+    Implemented support for displaying teleoperation video feeds when published through the operator portal, providing enhanced visual feedback during remote operations
+
+### [v1.0.0-beta.2](https://github.com/ONEPATH-ROBOTICS/ONEPATH-avatar/releases/tag/v1.0.0-beta.2)
+- Our animation family just got cuter!
+- Audio configuration instructions updated. Check README.md at [ONEPATH-avatar](https://github.com/ONEPATH-ROBOTICS/ONEPATH-avatar).
+
+### [v1.0.0-beta.1](https://github.com/ONEPATH-ROBOTICS/ONEPATH-avatar/releases/tag/v1.0.0-beta.1)
+- A modern React-based frontend application.
+- Provides animated eyes to ONEPATH.
+- Provides visual feedback to the user.
+
+## Docker image
+
+The ONEPATH-avatar service is provided as a Docker image for easy setup:
+```bash
+git clone https://github.com/ONEPATH-ROBOTICS/ONEPATH-avatar.git
+```
+```bash
+cd ONEPATH-avatar
+docker-compose up onepath_avatar -d --no-build
+```
+The latest docker image is also available at [Docker Hub](https://hub.docker.com/layers/onepathai/onepath_avatar/v1.0.0-beta.3).
+
+For more technical details, please refer to the [docs](https://one-path.io/).
