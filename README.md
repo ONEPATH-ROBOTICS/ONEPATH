@@ -112,16 +112,7 @@ We're excited to introduce **full autonomy mode**, where four services work toge
 - **onepath-avatar** – A modern React-based frontend application that provides the user interface and avatar display system for ONEPATH robotics software.
 - **onepath-video-processor** - The ONEPATH Video Processor is a Docker-based solution that enables real-time video streaming, face recognition, and audio capture for ONEPATH robots.
 
-## Intro to BrainPack?
-From research to real-world autonomy, a platform that learns, moves, and builds with you.
-We'll shortly be releasing the **BOM** and details on **DIY** for it.
-Stay tuned!
 
-Clone the following repos -
-- https://github.com/ONEPATH-ROBOTICS/ONEPATH.git
-- https://github.com/ONEPATH-ROBOTICS/unitree-sdk.git
-- https://github.com/ONEPATH-ROBOTICS/ONEPATH-avatar.git
-- https://github.com/ONEPATH-ROBOTICS/ONEPATH-video-processor.git
 
 ## Starting the system
 To start all services, run the following commands:
