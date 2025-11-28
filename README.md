@@ -6,8 +6,8 @@
 
 <p align="center">
 <a href="https://arxiv.org/abs/2412.18588">Technical Paper</a> |
-<a href="https://onepath.io/">Website</a> |
-<a href="https://onepath.io/">Documentation</a> |
+<a href="https://one-path.io/">Website</a> |
+<a href="https://one-path.io/">Documentation</a> |
 <a href="https://github.com/ONEPATH-ROBOTICS/ONEPATH">GitHub</a> |
 <a href="https://x.com/onepathrobotics">X</a> |
 <a href="https://discord.gg/onepath">Discord</a>
@@ -43,7 +43,7 @@ uv sync
 
 ### Obtain an API Key
 
-Get your API key from the [ONEPATH Portal](https://onepath.io/).
+Get your API key from the [ONEPATH Portal](https://one-path.io/).
 
 ### Launch ONEPATH
 
@@ -57,13 +57,13 @@ Or using Docker:
 docker compose up
 ```
 
-For more help connecting ONEPATH to your robot hardware, visit [onepath.io](https://onepath.io/).
+For more help connecting ONEPATH to your robot hardware, visit [one-path.io](https://one-path.io/).
 
 ## Documentation
 
-More detailed documentation can be accessed at [ONEPATH](https://onepath.io/).
+More detailed documentation can be accessed at [ONEPATH](https://one-path.io/).
 
-Try out some [examples](https://onepath.io/).
+Try out some [examples](https://one-path.io/).
 
 ## Source Code
 
